@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="12cm" height="4cm" viewBox="0 0 600 250"
+  xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <desc>Example</desc>
+    <circle id="kreis" cx="100" cy="100" r="70" />
+    <path id="dreieck" d="M200,30 h140 l-70,140 z" />
+    <rect id="quadrat" x="380" y="30" width="140" height="140" /> 
+</svg>

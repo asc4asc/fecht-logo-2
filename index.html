@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any">
+<link rel='mask-icon' href='favicon.svg' color='#ff0000'>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+  
+.o-big {
+   color: red;
+}
+
+@media only screen and (max-width: 1000px) {
+.o-big {
+  display: none;
+}
+}  
+  
+  
+@media only screen and (min-width: 1000px) {
+.aside {
+  background-color: #3322e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2vw;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px; 
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 1200px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+  
+@media only screen and (min-width: 1600px) {
+  /* For desktop: */
+  .col-w-1 {width: 8.33%;}
+  .col-w-2 {width: 16.66%;}
+  .col-w-3 {width: 25%;}
+  .col-w-4 {width: 33.33%;}
+  .col-w-5 {width: 41.66%;}
+  .col-w-6 {width: 50%;}
+  .col-w-7 {width: 58.33%;}
+  .col-w-8 {width: 66.66%;}
+  .col-w-9 {width: 75%;}
+  .col-w-10 {width: 83.33%;}
+  .col-w-11 {width: 91.66%;}
+  .col-w-12 {width: 100%;}
+}
+  
+.logo1 {
+  width: 100px;
+  stroke: blue;
+  fill: blue;
+}
+
+@media only screen and (min-width: 800px) {
+  .logo1 {
+  display: none;
+  stroke: green;
+  fill: green;
+  }
+}  
+  
+@media only screen and (min-width: 1100px) {
+  .logo1 {
+  display: inline;
+  stroke: red;
+  fill: red;
+  }
+}
+
+.logo {
+  stroke: blue;
+  fill: blue;
+}
+
+@media only screen and (min-width: 800px) {
+  .logo {
+  stroke: green;
+  fill: green;
+  }
+}  
+  
+@media only screen and (min-width: 1100px) {
+  .logo {
+  stroke: red;
+  fill: red;
+  }
+} 
+
+img {
+  width: 100%; 
+  height: auto;
+  fill: blue;
+}
+
+</style>
+</head>
+
+<body>
+
+<img src="fecht-logo.svg" alt="Fecht Logo">
+
+  
+ <object data="fecht-logo.svg" type="image/svg+xml">
+ <!---Fallback--->
+ Ihr Browser kann leider kein svg darstellen!  
+ </object>
+  
+  
+<div class="logo">  
+  <img src="fecht-logo.svg" style="width:150px">
+  <img src="fecht-logo.svg" style="width:150px">
+  <img src="fecht-logo.svg" style="width:150px">
+  <img src="fecht-logo.svg" style="width:150px">
+  <img src="fecht-logo.svg" style="width:150px">
+  <img src="fecht-logo.svg" style="width:150px">
+</div>    
+  
+<div>
+  <img src="fecht-logo.svg" style="width:250px">
+</div>    
+  
+<div class="logo">  
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <g class="currentLayer">
+    <path d="M88.15 99.3c0-52.25 42.84-94.58 95.73-94.58 52.9 0 95.74 42.33 95.74 94.59 0 52.26-42.85 94.59-95.74 94.59-52.89 0-95.73-42.33-95.73-94.6z"/> 
+    <path d="M94.45 89.52c0-45.3 34.23-82 76.5-82 42.26 0 76.5 36.7 76.5 82s-34.24 82-76.5 82c-42.27 0-76.5-36.7-76.5-82z"/> 
+    <path d="M119.7 141.7h103v132h-103z"/>
+    <path d="M178.45 212.52h25v19h-25z"/>
+    <path d="M12.76 213.17l307.07-69.09 13.45 59.77L26.2 272.94zM165.07 246.52h78.88v69.44h-78.88z"/>
+    <path d="M3.94 362.66L153.67 244l41.03 51.77L44.97 414.43zM243.8 248.3l86.37 151.04-55.56 31.77-86.37-151.04zM296.1 128.38a58.77 58.77 0 0170.66 1.36c20.6 16.14 27.69 43.84 17.28 67.54-10.41 23.7-35.72 37.47-61.71 33.6l-26.22-102.5z"/>
+    <polygon points="310,155 320,190 610,125"/>
+  </g>
+</svg>
+</div>
+  
+<div class="logo1">  
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <g class="currentLayer">
+    <path d="M88.15 99.3c0-52.25 42.84-94.58 95.73-94.58 52.9 0 95.74 42.33 95.74 94.59 0 52.26-42.85 94.59-95.74 94.59-52.89 0-95.73-42.33-95.73-94.6z"/>
+    <path d="M94.45 89.52c0-45.3 34.23-82 76.5-82 42.26 0 76.5 36.7 76.5 82s-34.24 82-76.5 82c-42.27 0-76.5-36.7-76.5-82z"/> 
+    <path d="M119.7 141.7h103v132h-103z"/>
+    <path d="M178.45 212.52h25v19h-25z"/>
+    <path d="M12.76 213.17l307.07-69.09 13.45 59.77L26.2 272.94zM165.07 246.52h78.88v69.44h-78.88z"/>
+    <path d="M3.94 362.66L153.67 244l41.03 51.77L44.97 414.43zM243.8 248.3l86.37 151.04-55.56 31.77-86.37-151.04zM296.1 128.38a58.77 58.77 0 0170.66 1.36c20.6 16.14 27.69 43.84 17.28 67.54-10.41 23.7-35.72 37.47-61.71 33.6l-26.22-102.5z"/>
+    <polygon points="310,155 320,190 610,125"/>
+  </g>
+</svg>  
+</div>
+  
+<p style="font-size:2vw;">Test Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city. Test Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town.</p>
+
+<div class="footer">
+  <div class="o-big">HIDE ON SCREENS smaller than lg</div>
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+  <div id="demo"></div>
+</div>
+
+ <script>
+    var txt = "";
+    txt += "<p>Total width/height: " + screen.width + "*" + screen.height + "</p>";
+    txt += "<p>Available width/height: " + screen.availWidth + "*" + screen.availHeight + "</p>";
+    txt += "<p>Color depth: " + screen.colorDepth + "</p>";
+    txt += "<p>Color resolution: " + screen.pixelDepth + "</p>";
+    txt += "<p>Window width: " + window.innerWidth; + "</p>";
+    txt += "<p>Window height;: " + window.innerHeight; + "</p>";
+    document.getElementById("demo").innerHTML = txt;
+</script>  
+  
+  
+</body>
+</html>

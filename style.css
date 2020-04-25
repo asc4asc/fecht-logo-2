@@ -1,0 +1,17 @@
+* {
+	stroke: blue; 
+	stroke-width: 2;
+	color: red;
+	fill: yellow;
+}
+
+path {
+	fill: orange;
+	stroke: red;
+}
+
+#quadrat {
+	fill: green;
+	stroke-width: 10;
+	stroke-opacity: 0.5;
+}
